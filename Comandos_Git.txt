@@ -1,0 +1,50 @@
+#####################################
+###### GIT ######################
+#####################################
+
+COMANDOS GIT
+
+* ls --> listar (como windows, linux)
+
+* pwd --> ver que directorio estamos
+
+* cd--> funciona como linux y windows
+
+* para iniciar un proyecto git de un trabajo, 3 formas
+
+	1.- boton derecho en la carpeta del trabajo y 'Git Bash Here'
+
+	2.- por cmd de windows. vas hasta la carpeta del trabajo y escribes 'git init'
+
+	3.- consola de git, que se llama git bash, y se hace lo mismo que en la terminal cmd
+
+
+* git init --> para iniciar un proyecto de git. te crea una carpeta oculta de nombre '.git' dentro de 
+la carpeta del proyecto (que nunca debes tocar, es donde se hara todo para realizar el control 
+de las versiones de tu trabajo)
+
+* git status --> para ver los archivos dentro de la carpeta y ver cuales tienen commits (que son cambios realizados)
+
+* git add nombre-archivo (p.ej: app.js) --> añadir archivos al area de trabajo Git
+
+* git commit --> para crear un primer punto de control de nuestro codigo. Es decir, la primera version del archivo en cuestion.
+Pero primero debes crear un usuario, si no lo tienes.
+
+* git config --global user.email "you@example.com" --> configurar email de usuario. Ya que debes tener un usuario para pdoer operar en Git.
+Si te equivocas con el nombre del email y le has dado enter, no pasa nada, vuelves a escribir el comando con el emial correcto y ya esta.
+  
+* git config --global user.name "Your Name" --> configurar el nombre de usuario del proyecto Git.
+
+Una vez escribes git commit se te abre un editor de texto 'MING' para que puedas escribir una descripcion de los cambios en el/los archivos.
+Si escribes y no aparece texto hay que pulsar la letra 'I' para decirle insertar. Una vez escribes la descripcion le das a tecla 'ESCAPE' y escribes ':wq'
+y te sale al mode de vista anterior al editor y te muestra el/los archivos con los cambio y el comentario escrito
+
+* git log --> te da un id de cada commit que hagas
+
+* git checkout -- nombre_archivo (p.ej: index.html) --> para deshacer los cambios que hallamos hecho en un archivo, pero desde la consola de Git.
+Cuando modificas un archivo y le das 'git status' en la consola, te dice que ese archivo ha sido modificado y con este comando podemos deshacer los cambios
+y se cambiara el propio archivo.
+
+* git diff nombre_archivo --> para ver las diferencias entre el commit y la ultima modificacion que hagas en el archivo.
+Aparecen signos '-' lo que ha sido elimminado y con signos '+' lo que se ha añadido.
+
